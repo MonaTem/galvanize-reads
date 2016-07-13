@@ -25,4 +25,13 @@ router.post('/new', function(req, res, next) {
 		});
 });
 
+router.get('/delete/:id', function(req, res, next) {
+	knex('book').del().where({
+			id: req.params.id
+		})
+		.then(function() {
+			res.redirect('/books');
+		});
+});
+
 module.exports = router;
