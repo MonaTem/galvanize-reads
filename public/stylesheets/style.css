@@ -43,10 +43,10 @@ input {
   color: #feffff;
   padding: 1rem;
   display: block;
-  background-color: #40bf40;
+  background-color: #2bbbad;
   transition: background-color 300ms; }
   .new:hover {
-    background-color: #66cc66; }
+    background-color: #45d4c6; }
 
 button,
 input[type=submit] {
@@ -63,9 +63,17 @@ header {
   color: #f7901e;
   padding: 1rem; }
 
+h1 a {
+  background-color: #4d4d4d;
+  color: #f7901e;
+  padding: 1rem; }
+
 #footer {
   background-color: #4d4d4d;
   color: #f7901e; }
+
+#forms {
+  width: 80vw; }
 
 main {
   display: flex;
