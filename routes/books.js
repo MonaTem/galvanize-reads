@@ -18,4 +18,11 @@ router.get('/new', function(req, res, next) {
 	res.render('new-book');
 });
 
+router.post('/new', function(req, res, next) {
+	knex('book').insert(req.body)
+		.then(function() {
+			res.redirect('/books');
+		});
+});
+
 module.exports = router;
