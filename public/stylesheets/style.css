@@ -63,6 +63,10 @@ header {
   color: #f7901e;
   padding: 1rem; }
 
+#footer {
+  background-color: #4d4d4d;
+  color: #f7901e; }
+
 main {
   display: flex;
   justify-content: center;
