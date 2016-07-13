@@ -1,6 +1,6 @@
 # Galvanize Reads
 
-![Galvanize Reads](greads.jpg "Galvanize Reads")
+![Galvanize Reads](books.jpg "Galvanize Reads")
 
 * Galvanize Reads is a [CRUD](https://git.heroku.com/greads25.git) app to track books and authors.
 * The app our Q2 assessment for the [Galvanize Full Stack](http://www.galvanize.com/courses/web-development/) program.
