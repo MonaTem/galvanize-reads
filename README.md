@@ -29,7 +29,7 @@ Assuming you have the required software on you computer and have it configured p
    - ````$ cd galvanize-reads````
    - ````$ npm i````
 3. Create the database tables:
-   - ````$ psql q2db < ./sql/create.sql````
+   - ````$ knex migrate:latest````
 4. Seed the database tables:
    - ````$ knex seed:run````
 4. Start the server:
