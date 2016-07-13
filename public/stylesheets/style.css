@@ -1,5 +1,10 @@
 .fa-remove {
-  color: #bf4040; }
+  color: #bf4040;
+  padding: 0.3rem; }
+
+.fa-pencil-square-o {
+  color: #bf4040;
+  padding: 0.3rem; }
 
 .delete {
   background-color: #bf4040; }
