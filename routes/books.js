@@ -7,17 +7,19 @@ router.get('/', function(req, res, next) {
 	knex('book').select()
 		.then(function(books) {
 			res.render(
-				"books", {
+				'books', {
 					books: books
 				}
 			);
 		});
 });
 
+/* GET 'new book' page. */
 router.get('/new', function(req, res, next) {
 	res.render('new-book');
 });
 
+/* INSERT new book. */
 router.post('/new', function(req, res, next) {
 	knex('book').insert(req.body)
 		.then(function() {
@@ -25,6 +27,7 @@ router.post('/new', function(req, res, next) {
 		});
 });
 
+/* DELETE book. */
 router.get('/delete/:id', function(req, res, next) {
 	knex('book').del().where({
 			id: req.params.id
@@ -32,6 +35,31 @@ router.get('/delete/:id', function(req, res, next) {
 		.then(function() {
 			res.redirect('/books');
 		});
+});
+
+/* GET 'edit book' page. */
+router.get('/edit/:id', function(req, res, next) {
+	knex('book').where({
+			id: req.params.id
+		})
+		.then(function(book) {
+			res.render(
+				"edit-book", {
+					book: book[0]
+				}
+			);
+		});
+});
+
+/* EDIT book. */
+router.put('/edit/:id', function(req, res, next) {
+  console.log("foo");
+  knex('book').update(req.body).where({
+		id: req.params.id
+	})
+    .then(function(){
+      res.redirect('/books');
+    });
 });
 
 module.exports = router;

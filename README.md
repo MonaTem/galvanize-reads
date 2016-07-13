@@ -35,3 +35,12 @@ Assuming you have the required software on you computer and have it configured p
 4. Start the server:
    - ````$ npm run dev-start````
 2. Visit: [http://localhost:3000](http://localhost:3000)
+
+## Sample Book to Insert
+Eloquent JavaScript, 2nd Edition    
+
+JavaScript    
+
+Eloquent JavaScript, 2nd Edition dives deep into the JavaScript language to show you how to write beautiful, effective code. Author Marijn Haverbeke immerses you in example code from the start, while exercises and full-chapter projects give you hands-on experience with writing your own programs.    
+
+http://eloquentjavascript.net/img/cover.png    
