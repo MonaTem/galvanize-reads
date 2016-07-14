@@ -37,6 +37,7 @@ Assuming you have the required software on you computer and have it configured p
 2. Visit: [http://localhost:3000](http://localhost:3000)
 
 ## Sample Book to Insert
+
 Eloquent JavaScript, 2nd Edition    
 
 JavaScript    
@@ -44,3 +45,11 @@ JavaScript
 Eloquent JavaScript, 2nd Edition dives deep into the JavaScript language to show you how to write beautiful, effective code. Author Marijn Haverbeke immerses you in example code from the start, while exercises and full-chapter projects give you hands-on experience with writing your own programs.    
 
 http://eloquentjavascript.net/img/cover.png    
+
+## Sample Author to Insert
+
+Marijn Haverbeke
+
+Marijn Haverbeke is a programming language enthusiast and polyglot. He's worked his way from trivial BASIC games on the Commodore, through a C++ phase, to the present where he mostly hacks on database systems and web APIs in dynamic languages. He recently won the JS1K—JavaScript demo in 1024 bytes—contest, and is the author of a wide range of open-source software.
+
+http://www.bennadel.com/resources/uploads/2011/eloquent_javascript_a_modern_introduction_to_programming_by_marijn_haverbeke.jpg
