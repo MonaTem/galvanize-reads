@@ -43,23 +43,33 @@ router.get('/edit/:id', function(req, res, next) {
 			id: req.params.id
 		})
 		.then(function(book) {
-			res.render(
-				"edit-book", {
-					book: book[0]
-				}
-			);
+			res.render("edit-book", {
+				book: book[0]
+			});
 		});
 });
 
 /* EDIT book. */
 router.put('/edit/:id', function(req, res, next) {
-  console.log("foo");
-  knex('book').update(req.body).where({
-		id: req.params.id
-	})
-    .then(function(){
-      res.redirect('/books');
-    });
+	knex('book').update(req.body).where({
+			id: req.params.id
+		})
+		.then(function() {
+			res.redirect('/books');
+		});
+});
+
+/* GET book. */
+router.get('/:id', function(req, res, next) {
+	console.log("bar");
+	knex('book').where({
+			id: req.params.id
+		})
+		.then(function(book) {
+			res.render('view-book', {
+				book: book[0]
+			});
+		});
 });
 
 module.exports = router;
