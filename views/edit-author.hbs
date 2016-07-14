@@ -1,0 +1,26 @@
+<div class="container">
+	<div class="row">
+		<div class="col s12 m6 offset-m3">
+			<h3>Edit Author</h3>
+			<br>
+			<form action="/authors/edit/{{author.id}}/?_method=PUT" method="POST">
+				<label for="fname">First Name:</label>
+				<input id="fname" name="fname" value="{{author.fname}}">
+				<br>
+				<br>
+				<label for="lname">Last Name:</label>
+				<input id="lname" name="lname" value="{{author.lname}}">
+				<br>
+				<br>
+				<label for="bio">Bio:</label>
+				<textarea id="bio" name="bio" class="materialize-textarea">{{author.bio}}</textarea>
+				<br>
+				<br>
+				<label for="image_url">Author Photo:</label>
+				<input id="image_url" type="url" name="image_url" value="{{author.image_url}}">
+				<br>
+				<button type="submit" class="waves-effect waves-light btn">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
