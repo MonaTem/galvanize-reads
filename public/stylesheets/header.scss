@@ -3,9 +3,19 @@ header {
 	color: $primary-color;
 	padding: 1rem;
 }
-
 h1 a {
 	background-color: $dark-grey;
 	color: $primary-color;
 	padding: 1rem;
+}
+.nav-wrapper {
+	background-color: $dark-grey;
+}
+.nav-wrapper a {
+	color: $primary-color;
+}
+#noshadow {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
 }

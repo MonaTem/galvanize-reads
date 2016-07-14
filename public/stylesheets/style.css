@@ -69,6 +69,17 @@ h1 a {
   color: #f7901e;
   padding: 1rem; }
 
+.nav-wrapper {
+  background-color: #616161; }
+
+.nav-wrapper a {
+  color: #f7901e; }
+
+#noshadow {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+
 #footer {
   background-color: #616161;
   color: #cccccc; }
@@ -98,6 +109,7 @@ h1 a {
   font-weight: 400; }
 
 main {
+  background-color: #feffff;
   display: flex;
   justify-content: center;
   align-items: center;
