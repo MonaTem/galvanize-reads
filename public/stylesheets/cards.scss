@@ -1,11 +1,13 @@
 .card-title a {
-	@include body-font;
-	color: $primary-color;
+  @include body-font;
+  color: $primary-color;
 }
+
 .card .card-title {
-	@include body-font;
-	font-weight: 600;
+  @include body-font;
+  font-weight: 600;
 }
+
 .card-content p {
-	@include body-font;
+  @include body-font;
 }

@@ -19,7 +19,12 @@
     "morgan": "~1.6.1",
     "node-sass-middleware": "0.8.0",
     "pg": "^6.0.2",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "eslint": "^3.10.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
   },
   "devDependencies": {
     "nodemon": "^1.9.2"

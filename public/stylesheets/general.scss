@@ -1,54 +1,65 @@
 .fa-remove {
-	color: $alert;
-	padding: 0.3rem;
+  color: $alert;
+  padding: 0.3rem;
 }
+
 .fa-pencil-square-o {
-	color: $alert;
-	padding: 0.3rem;
+  color: $alert;
+  padding: 0.3rem;
 }
+
 .delete {
-	background-color: $alert;
+  background-color: $alert;
 }
+
 h1 {
-	@include primary-header-font
+  @include primary-header-font
 }
+
 p {
-	@include body-font;
+  @include body-font;
 }
+
 a {
-	text-decoration: none;
-	@include body-font;
+  text-decoration: none;
+  @include body-font;
 }
+
 input,
 label {
-	display: block;
-	@include body-font;
+  display: block;
+  @include body-font;
 }
+
 label {
-	font-size: 1rem;
+  font-size: 1rem;
 }
+
 input {
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
+
 .new {
-	font-weight: 700;
-	text-align: center;
-	color: $white;
-	padding: 1rem;
-	display: block;
-	background-color: $success;
-	transition: background-color 300ms;
-	&:hover {
-		background-color: lighten($success, 10%);
-	}
+  font-weight: 700;
+  text-align: center;
+  color: $white;
+  padding: 1rem;
+  display: block;
+  background-color: $success;
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: lighten($success, 10%);
+  }
 }
+
 button,
 input[type=submit] {
-	border: none;
-	padding: 1rem;
-	color: $white;
-	font-weight: 700;
-	box-shadow: 2px 2px 1px $light-grey;
-	cursor: pointer;
-	width: 100%;
+  border: none;
+  padding: 1rem;
+  color: $white;
+  font-weight: 700;
+  box-shadow: 2px 2px 1px $light-grey;
+  cursor: pointer;
+  width: 100%;
 }
