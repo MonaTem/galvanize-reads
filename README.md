@@ -53,3 +53,10 @@ Marijn Haverbeke
 Marijn Haverbeke is a programming language enthusiast and polyglot. He's worked his way from trivial BASIC games on the Commodore, through a C++ phase, to the present where he mostly hacks on database systems and web APIs in dynamic languages. He recently won the JS1K—JavaScript demo in 1024 bytes—contest, and is the author of a wide range of open-source software.
 
 http://www.bennadel.com/resources/uploads/2011/eloquent_javascript_a_modern_introduction_to_programming_by_marijn_haverbeke.jpg
+
+## TODO List
+
+* Add and use genres.
+* Add and use books_written.
+* Improve styling.
+* Add automated build tasks, build, and distribute.

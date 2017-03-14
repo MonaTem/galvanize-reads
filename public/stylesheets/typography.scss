@@ -1,15 +1,16 @@
 @mixin primary-header-font {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 500;
 }
 @mixin secondary-header-font {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 @mixin body-font {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.333rem;
+  font-weight: 333;
+  line-height: 1.75rem;
 }

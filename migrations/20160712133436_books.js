@@ -1,5 +1,5 @@
-exports.up = function (knex, Promise) {
-  return knex.schema.createTable('book', function (table) {
+exports.up = function up(knex, Promise) {
+  return knex.schema.createTable('book', (table) => {
     table.increments();
     table.string('title');
     table.string('genre');
@@ -8,6 +8,6 @@ exports.up = function (knex, Promise) {
   });
 };
 
-exports.down = function (knex, Promise) {
+exports.down = function down(knex, Promise) {
   return knex.schema.dropTableIfExists('book');
 };

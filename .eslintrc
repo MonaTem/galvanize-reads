@@ -1,5 +1,3 @@
-# From: http://www.acuriousanimal.com/2016/08/14/configuring-atom-with-eslint.html
-# Then I began editing it
 {
   "extends": "airbnb",
   "env": {
@@ -19,5 +17,6 @@
     "no-new": "warn",
     "comma-dangle": "warn",
     "no-undef": "warn",
+    "no-use-before-define": ["error", {"functions": false}]
   }
 }

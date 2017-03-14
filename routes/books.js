@@ -1,73 +1,75 @@
-var express = require('express');
-var router = express.Router();
-var knex = require('../db/knex');
+const express = require('express');
+
+const router = express.Router();
+const knex = require('../db/knex');
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-  knex('book').select()
-    .then(function (books) {
-      res.render(
-        'books', {
-          books: books
-        }
-      );
+router.get('/', (req, res) => {
+  knex('book').select().then((books) => {
+    res.render('books', {
+      books,
     });
+  });
 });
 
 /* GET 'new book' page. */
-router.get('/new', function (req, res, next) {
+router.get('/new', (req, res) => {
   res.render('new-book');
 });
 
 /* INSERT new book. */
-router.post('/new', function (req, res, next) {
-  knex('book').insert(req.body)
-    .then(function () {
-      res.redirect('/books');
-    });
+router.post('/new', (req, res) => {
+  knex('book').insert(req.body).then(() => {
+    res.redirect('/books');
+  });
 });
 
 /* DELETE book. */
-router.get('/delete/:id', function (req, res, next) {
-  knex('book').del().where({
-      id: req.params.id
+router.get('/delete/:id', (req, res) => {
+  knex('book')
+    .del()
+    .where({
+      id: req.params.id,
     })
-    .then(function () {
+    .then(() => {
       res.redirect('/books');
     });
 });
 
 /* GET 'edit book' page. */
-router.get('/edit/:id', function (req, res, next) {
-  knex('book').where({
-      id: req.params.id
+router.get('/edit/:id', (req, res) => {
+  knex('book')
+    .where({
+      id: req.params.id,
     })
-    .then(function (book) {
-      res.render("edit-book", {
-        book: book[0]
+    .then((book) => {
+      res.render('edit-book', {
+        book: book[0],
       });
     });
 });
 
 /* EDIT book. */
-router.put('/edit/:id', function (req, res, next) {
-  knex('book').update(req.body).where({
-      id: req.params.id
+router.put('/edit/:id', (req, res) => {
+  knex('book')
+    .update(req.body)
+    .where({
+      id: req.params.id,
     })
-    .then(function () {
+    .then(() => {
       res.redirect('/books');
     });
 });
 
 /* GET book. */
-router.get('/:id', function (req, res, next) {
-  console.log("bar");
-  knex('book').where({
-      id: req.params.id
+router.get('/:id', (req, res) => {
+  knex('book')
+    .where({
+      id: req.params.id,
     })
-    .then(function (book) {
+    .then((book) => {
       res.render('view-book', {
-        book: book[0]
+        book: book[0],
       });
     });
 });
